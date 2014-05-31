@@ -1,6 +1,6 @@
 set showmode
 set number
-set ts=4
+set tabstop=4
 set cursorline
 set autoindent
 :filetype on
@@ -25,6 +25,11 @@ autocmd BufWritePost *.cpp :!c++ -std=c++11 %
 
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+inoremap < <><Esc>i
+inoremap [ []<Esc>i
+
 " autocmd VimEnter *.cpp :inoremap { {<CR>}<Esc>ko<Tab>
 autocmd FileType cpp	call Cpp_Option()
 function Cpp_Option()
