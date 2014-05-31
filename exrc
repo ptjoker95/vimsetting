@@ -27,7 +27,6 @@ inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
 inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
-inoremap < <><Esc>i
 inoremap [ []<Esc>i
 
 " autocmd VimEnter *.cpp :inoremap { {<CR>}<Esc>ko<Tab>
